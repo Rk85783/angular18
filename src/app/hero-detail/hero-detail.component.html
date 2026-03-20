@@ -1,0 +1,11 @@
+<h2>Hero Detail</h2>
+
+<div *ngIf="hero$ | async as hero">
+    <h3>{{ hero.name }}</h3>
+    <p>ID: {{ hero.id }}</p>
+</div>
+
+<p>Query Param: {{ queryParam }}</p>
+<p>Fragment: {{ fragment }}</p>
+
+<button (click)="goBack()">Back</button>

@@ -1,0 +1,9 @@
+<h2>Hero List</h2>
+
+<ul>
+    <li *ngFor="let hero of (heroes$ | async)">
+        <button (click)="goToHero(hero)">
+            {{ hero.name }}
+        </button>
+    </li>
+</ul>
