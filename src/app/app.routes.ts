@@ -1,4 +1,4 @@
-import { Routes } from '@angular/router';
+import { ResolveFn, Routes } from '@angular/router';
 import { FirstComponent } from './first/first.component';
 import { SecondComponent } from './second/second.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
@@ -15,6 +15,7 @@ export const routes: Routes = [
     // 
     {
         path: 'first-component',
+        title: 'First component',
         component: FirstComponent, // this is the component with the <router-outlet> in the template
         children: [
             {
@@ -30,3 +31,5 @@ export const routes: Routes = [
     { path: 'second-component', component: SecondComponent },
     { path: '**', component: PageNotFoundComponent },
 ];
+
+const resolvedChildATitle: ResolveFn<string> = () => Promise.resolve('child a');
