@@ -17,3 +17,8 @@
 - Display form status
 
 ## Creating dynamic forms
+- Import the FormArray class
+- Define a FormArray control
+- Access the FormArray control
+- Display the form array in the template
+- Add an alias
