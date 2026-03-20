@@ -1,0 +1,24 @@
+<h2>Products</h2>
+
+<ul>
+    <!-- Simple -->
+    <li>
+        <a [routerLink]="['/product', 1]">
+            Product 1
+        </a>
+    </li>
+
+    <!-- With optional param -->
+    <li>
+        <a [routerLink]="['/product', 2, { mode: 'view' }]">
+            Product 2 (view mode)
+        </a>
+    </li>
+
+    <!-- With edit mode -->
+    <li>
+        <a [routerLink]="['/product', 3, { mode: 'edit' }]">
+            Product 3 (edit mode)
+        </a>
+    </li>
+</ul>
